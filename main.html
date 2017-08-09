@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+	  xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Welcome</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/notie-master/dist/notie.css">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/chart.js"></script>
+	<script type="text/javascript" src="assets/wheelnav/raphael.min.js"></script>
+    <script type="text/javascript" src="assets/wheelnav/raphael.icons.min.js"></script>
+    <script type="text/javascript" src="assets/wheelnav/wheelnav.min.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+
+        window.onload = function () {
+
+            //This is the place for code snippets from the documentation -> http://wheelnavjs.softwaretailoring.net/documentation.html
+			$('#stores').css( "display", "none" );
+            $('#parsers').css( "display", "none" );
+            $('#modules').css( "display", "none" );
+            $('#features').css( "display", "none" );
+            $('#objectives').css( "display", "none" );
+            $('#info').css( "display", "block" );
+            $('#skill').css( "display", "none" );
+            $('#stores-window').css( "display", "none" );
+            $('#parsers-window').css( "display", "none" );
+            $('#modules-window').css( "display", "none" );
+            $('#features-window').css( "display", "none" );
+            $('#objectives-window').css( "display", "none" );
+            $('#info-window').css( "display", "block" );
+            $('#skill-window').css( "display", "none" );
+            var piemenu = new wheelnav('piemenu');
+			piemenu.sliceInitPathFunction = piemenu.slicePathFunction;
+			piemenu.initPercent = 0.1;
+			piemenu.wheelRadius = piemenu.wheelRadius;
+			piemenu.createWheel();
+        };
+
+    </script>
+	
+  </head>
+
+  <body>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><i class="fa fa-bolt"></i></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+	<div id="hello">
+	    <div class="container">
+	    	<div class="row">
+	    		<div class="col-lg-8 col-lg-offset-2 centered">
+	    			<h1>Hello</h1>
+	    			<h2>World!</h2>
+	    		</div><!-- /col-lg-8 -->
+	    	</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div><!-- /hello -->
+
+	<div id="green">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-5 centered">
+					<div id='piemenu' data-wheelnav
+						 data-wheelnav-slicepath='DonutSlice'
+						 data-wheelnav-navangle='0'
+						 data-wheelnav-cssmode 
+						 data-wheelnav-init>
+						<div data-wheelnav-navitemtext='Info' onmouseup='createBlock("info")'></div>
+						<div data-wheelnav-navitemtext='Stores' onmouseup='createBlock("stores")'></div>
+						<div data-wheelnav-navitemtext='Parsers' onmouseup='createBlock("parsers")'></div>
+						<div data-wheelnav-navitemtext='Modules' onmouseup='createBlock("modules")'></div>
+						<div data-wheelnav-navitemtext='Features' onmouseup='createBlock("features")'></div>
+						<div data-wheelnav-navitemtext='Skills' onmouseup='createBlock("skill")'></div>
+						<div data-wheelnav-navitemtext='Objectives' onmouseup='createBlock("objectives")'></div>
+					</div>
+				</div>
+				<div id="stores" class="col-lg-7 centered">
+					<h2>Creating online stores</h2>
+					<div class="col-lg-6">
+						<h1>Services</h1>
+						<p>Tasks of any complexity<br>
+						Adaptive design<br>
+						Backend developing</p>
+					</div>
+					<div class="col-lg-6">
+						<h1>Technologies</h1>
+						<p>Yii 2 framework <br>
+						jQuery and Bootstrap and other libraries...</p>
+					</div>
+				</div>
+				<div id="parsers" class="col-lg-7 centered">
+					<h2>Parsing</h2>
+					<div class="col-lg-6">
+						<h1>Services</h1>
+						<p>Real-time parsing content <br>
+							Parsing sites , files , tables... <br>
+							Creating databases from content</p>
+					</div>
+					<div class="col-lg-6">
+						<h1>Technologies</h1>
+						<p> Curl , phpQuery , phpExcel <br>
+							</p>
+					</div>
+				</div>
+				<div id="modules" class="col-lg-7 centered">
+					<h2>Modules</h2>
+					<div class="col-lg-6">
+						<h1>Services</h1>
+						<p>Admin panels <br>
+							Creating filters for content<br>
+							Collection of statistics </p>
+					</div>
+					<div class="col-lg-6">
+						<h1>Technologies</h1>
+						<p> RedBeanPhp, ajax , jQuery <br>
+						</p>
+					</div>
+				</div>
+				<div id="features" class="col-lg-7 centered">
+					<h2>Features</h2>
+					<div class="col-lg-6">
+						<h1>Services</h1>
+						<p>Animated interface <br>
+							Refactoring actions from pages to modal windows<br>
+							 </p>
+					</div>
+					<div class="col-lg-6">
+						<h1>Technologies</h1>
+						<p> RedBeanPhp, ajax , jQuery , notie , wheelnav and other...<br>
+						</p>
+					</div>
+				</div>
+				<div id="info" class="col-lg-7 centered">
+					<div class="col-lg-6">
+						<br>
+						<a href="#"><img src="assets/img/photo_3.png" alt="" width="162"></a>
+						<h3>Alexander Marchenko</h3>
+					</div>
+					<div class="col-lg-6">
+						<h2> Backend PHP developer</h2>
+						<p>+380 67 291 30 50<br>
+							+380 63 350 70 80<br>
+							Viber / Telegram <br>
+							broaden.your@outlook.com<br>
+						</p>
+					</div>
+				</div>
+				<div id="skill" class="col-lg-7 centered">
+					<div class="col-lg-6">
+						<h2>Another expirience</h2>
+						<p> Site with parser based on ASP.net with C# <br>
+							Mail sender using python <br>
+							Output Power Regulator with oled display based on arduino<br>
+						</p>
+					</div>
+					<div class="col-lg-6">
+						<h2>University</h2>
+						<p>Learned basics of Parallel and Separate Programming (Java and C++)<br>
+							Learned basics of C and assembler<br>
+						</p>
+					</div>
+				</div>
+				<div id="objectives" class="col-lg-7 centered">
+					<h3>Android dev. using PhoneGap</h3>
+					<p>Pocket site</p>
+					<h3>Android dev. using Java</h3>
+					<p>Android QR-Auth</p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row centred mt grid">
+			<div id="stores-window" class="col-lg-12 centered">
+				<div class="category-tab"><!--category-tab-->
+					<div class="col-sm-12">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#badger" data-toggle="tab">Badger sportswear</a></li>
+							<li><a href="#electrovolt" data-toggle="tab">Electrovolt store</a></li>
+						</ul>
+					</div>
+					<div class="tab-content">
+						<div class="tab-pane fade active in" id="badger" >
+							<h2>Badger</h2>
+							<div class="col-lg-6">
+								<div class="col-lg-12">
+									<a href="#"><img src="assets/img/05.jpg" alt="" width="200"></a>
+								</div>
+								<div class="col-lg-6">
+									<a href="#"><img src="assets/img/iphone.png" alt="" width="100"></a>
+								</div>
+								<div class="col-lg-6">
+									<a href="#"><img src="assets/img/iphone.png" alt="" width="100"></a>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<h1>Obligations</h1>
+									<br>Creating adaptivity to an existing design</br>
+									Parse all products from excel and automatization of searching additional information about products like images,describtion, etc</br>
+									Developing admin panel, user-interface and all action functions</br>
+									Creating user-statistic collector</br>
+									Size detecting by one or two sizes and after-processing to detect gender and type of the product with sizes</br>
+									Developing database model</p>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="electrovolt" >
+							<h2>Electrovolt</h2>
+							<div class="col-lg-6">
+								<div class="col-lg-12">
+									<a href="#"><img src="assets/img/05.jpg" alt="" width="200"></a>
+								</div>
+								<div class="col-lg-6">
+									<a href="#"><img src="assets/img/iphone.png" alt="" width="100"></a>
+								</div>
+								<div class="col-lg-6">
+									<a href="#"><img src="assets/img/iphone.png" alt="" width="100"></a>
+								</div>
+							</div>
+							<div class="col-lg-6">
+								<h1>Obligations</h1>
+								<ul>
+									<br>Creating design</br>
+									Creating refactoring system for content(ex. creating specification <strong>'Voltage'</strong> using <strong>'Resistance'</strong> and <strong>'Power'</strong>)</br>
+									Developing admin panel, user-interface and all action functions</br>
+									Creating user-statistic collector</br>
+									Developing database model</p>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div id="parsers-window" class="col-lg-12 centered">
+				<h2>Parsing</h2>
+				<div class="col-lg-6">
+					<h1>Sportswear</h1>
+					<p>Sequential parsing of ten sites for searching products by articles from excel files<br>
+						Creating database for searcing the relationship between the content received and the keywords frm db<br>
+						Refactoring parsed content to database with detecting collection,type of sport,gender,type of wear and size<br></p>
+				</div>
+				<div class="col-lg-6">
+					<h1>Technologies</h1>
+					<p> Curl , phpQuery , phpExcel <br>
+					</p>
+				</div>
+			</div>
+			<div id="modules-window" class="col-lg-12 centered">
+				<h2>Modules</h2>
+				<div class="col-lg-6">
+					<h1>Services</h1>
+					<p>Admin panels <br>
+						Creating filters for content<br>
+						Collection of statistics </p>
+				</div>
+				<div class="col-lg-6">
+					<h1>Technologies</h1>
+					<p> RedBeanPhp, ajax , jQuery <br>
+					</p>
+				</div>
+			</div>
+			<div id="features-window" class="col-lg-12 centered">
+				<h2>Features</h2>
+				<div class="col-lg-6">
+					<h1>Services</h1>
+					<p>Animated interface <br>
+						Refactoring actions from pages to modal windows<br>
+					</p>
+				</div>
+				<div class="col-lg-6">
+					<h1>Technologies</h1>
+					<p> RedBeanPhp, ajax , jQuery , notie , wheelnav and other...<br>
+					</p>
+				</div>
+			</div>
+			<div id="info-window" class="col-lg-12 centered">
+				<div class="col-lg-6">
+					<br>
+					<a href="#"><img src="assets/img/photo_3.png" alt="" width="162"></a>
+					<h3>Alexander Marchenko</h3>
+				</div>
+				<div class="col-lg-6">
+					<h2> Backend PHP developer</h2>
+					<p>+380 67 291 30 50<br>
+						+380 63 350 70 80<br>
+						Viber / Telegram <br>
+						broaden.your@outlook.com<br>
+					</p>
+				</div>
+			</div>
+			<div id="skill-window" class="col-lg-12 centered">
+				<div class="col-lg-6">
+					<h2>Another expirience</h2>
+					<p> Site with parser based on ASP.net with C# <br>
+						Mail sender using python <br>
+						Output Power Regulator with oled display based on arduino<br>
+					</p>
+				</div>
+				<div class="col-lg-6">
+					<h2>University</h2>
+					<p>Learned basics of Parallel and Separate Programming (Java and C++)<br>
+						Learned basics of C and assembler<br>
+					</p>
+				</div>
+			</div>
+			<div id="objectives-window" class="col-lg-12 centered">
+				<h3>Android dev. using PhoneGap</h3>
+				<p>Pocket site</p>
+				<h3>Android dev. using Java</h3>
+				<p>Android QR-Auth</p>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="skills">
+		<div class="container">
+			<div class="row centered">
+				<h3>OUR SKILLS</h3>
+				<div class="col-lg-3 mt">
+					<canvas id="php" height="130" width="130"></canvas>
+					<p>PHP</p>
+					<br>
+					<script>
+						var doughnutData = [
+								{
+									value: 60,
+									color:"#74cfae"
+								},
+								{
+									value : 40,
+									color : "#3c3c3c"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("php").getContext("2d")).Doughnut(doughnutData);
+					</script>
+				</div>
+				<div class="col-lg-3 mt">
+					<canvas id="html&css" height="130" width="130"></canvas>
+					<p>HTML&CSS</p>
+					<br>
+					<script>
+						var doughnutData = [
+								{
+									value: 50,
+									color:"#74cfae"
+								},
+								{
+									value : 50,
+									color : "#3c3c3c"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("html&css").getContext("2d")).Doughnut(doughnutData);
+					</script>
+				</div>
+				<div class="col-lg-3 mt">
+					<canvas id="javascript" height="130" width="130"></canvas>
+					<p>Javascript</p>
+					<br>
+					<script>
+						var doughnutData = [
+								{
+									value: 40,
+									color:"#74cfae"
+								},
+								{
+									value : 60,
+									color : "#3c3c3c"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+					</script>
+				</div>
+				<div class="col-lg-3 mt">
+					<canvas id="mysql" height="130" width="130"></canvas>
+					<p>MySQL</p>
+					<br>
+					<script>
+						var doughnutData = [
+								{
+									value: 80,
+									color:"#74cfae"
+								},
+								{
+									value : 20,
+									color : "#3c3c3c"
+								}
+							];
+							var myDoughnut = new Chart(document.getElementById("mysql").getContext("2d")).Doughnut(doughnutData);
+					</script>
+				</div>
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /skills -->
+	
+	<section id="contact"></section>
+	<div id="social">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="col-md-3">
+						<button type="button" ><a href="#"><i class="fa fa-facebook"></i></a></button>
+					</div>
+					<div class="col-md-3">
+						<button type="button" ><a href="https://www.linkedin.com/in/alexander-marchenko-256813135?trk=hp-identity-name"><i class="fa fa-linkedin-square"></i></a></button>
+					</div>
+					<div class="col-md-3">
+						<button type="button" ><a href="#"><i class="fa fa-twitter"></i></a></button>
+					</div>
+					<div class="col-md-3">
+						<button type="button" onclick="mail()"><i class="fa fa-envelope"></i></button>
+					</div>
+				</div>
+				<div class="row centered">
+				<div class="col-lg-8 col-lg-offset-2">
+						<div class="lead">I want to read your comments and suggestions.</div>
+				</div>
+			</div>
+		</div><!-- /container -->
+	</div><!-- /social -->
+
+
+	<div id="f">
+		<div class="container">
+			<div class="row">
+				<p>Your recruit</i> YR</p>
+			</div>
+		</div>
+	</div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.js"></script>
+	<script src="assets/js/getData.js"></script>
+	<script src="assets/notie-master/src/notie.js"></script>
+    <script>
+      notie.setOptions({
+        colorSuccess: '#57BF57',
+        colorWarning: '#D6A14D',
+        colorError: '#E1715B',
+        colorInfo: '#4D82D6',
+        colorNeutral: '#A0A0A0',
+        colorText: '#FFFFFF',
+        animationDelay: 300,
+        backgroundClickDismiss: true
+      })
+
+      function success () {
+        notie.alert(1, 'Success!')
+      }
+
+      function warning () {
+        notie.alert(2, 'Error!<br>Please check the entered information<br>', 2)
+      }
+
+      function error () {
+        notie.alert(3, 'Error.', 2)
+      }
+
+      function info () {
+        notie.alert(4, 'Information.', 2)
+      }
+
+      function force () {
+        notie.force(2, 'You cannot do that, sending you back.', 'OK', function () {
+          notie.alert(3, 'Maybe when you\'re older...', 3)
+        })
+      }
+
+      function confirm () {
+        notie.confirm('Are you sure you want to do that?<br><b>That\'s a bold move...</b>', 'Yes', 'Cancel', function () {
+            notie.alert(1, 'Good choice! :D', 2)
+          }, function () {
+          notie.alert(3, 'Aw, why not? :(', 2)
+        })
+      }
+
+      function input() {
+        notie.input({
+            type: 'text',
+            placeholder: 'name@example.com',
+            allowed: ['an', 'sp']
+          }, 'Please enter your email address:', 'Submit', 'Cancel', function (valueEntered) {
+            notie.alert(1, 'You entered: ' + valueEntered, 2)
+          }, function (valueEntered) {
+            notie.alert(3, 'You cancelled with this value: ' + valueEntered, 2)
+        })
+      }
+
+      function login() {
+        notie.input({
+            type: 'text',
+            placeholder: 'nickname',
+            allowed: ['an', 'sp']
+          }, 'Please enter your login:', 'Submit', 'Cancel', function (valueEntered) {
+            localStorage.setItem('login',valueEntered);
+            password();
+          }, function (valueEntered) {
+            notie.alert(3, 'You cancelled with this value: ' + valueEntered, 2)
+        })
+      }
+
+      function password() {
+        notie.input({
+            type: 'password',
+            placeholder: 'password',
+            allowed: ['an', 'sp']
+          }, 'Please enter your password:', 'Submit', 'Cancel', function (valueEntered) {
+            localStorage.setItem('password',valueEntered);
+            confirmpassword();
+          }, function (valueEntered) {
+            notie.alert(3, 'You cancelled with this value: ' + valueEntered, 2)
+        })
+      }
+
+       function confirmpassword() {
+        notie.input({
+            type: 'password',
+            placeholder: 'password',
+            allowed: ['an', 'sp']
+          }, 'Please confirm your password:', 'Submit', 'Cancel', function (valueEntered) {
+            localStorage.setItem('confirm_password',valueEntered);
+            date();
+          }, function (valueEntered) {
+            notie.alert(3, 'You cancelled with this value: ' + valueEntered, 2)
+        })
+      }
+
+      function mail() {
+        notie.input({
+            type: 'text',
+            placeholder: 'example@e-mail.com',
+          }, 'Please enter your e-mail:', 'Submit', 'Cancel', function (valueEntered) {
+            localStorage.setItem('mail',valueEntered);
+            login();
+          }, function (valueEntered) {
+            notie.alert(3, 'You cancelled with this value: ' + valueEntered, 2)
+        })
+      }
+
+      function select() {
+        notie.select('Demo item #1, owner is Jane Smith', 'Cancel',
+        [
+          {
+            title: 'Share',
+            handler: function () {
+              notie.alert(1, 'Share item!', 3)
+            }
+          },
+          {
+            title: 'Open',
+            color: '#57BF57',
+            handler: function () {
+              notie.alert(1, 'Open item!', 3)
+            }
+          },
+          {
+            title: 'Edit',
+            type: 2,
+            handler: function () {
+              notie.alert(2, 'Edit item!', 3)
+            }
+          },
+          {
+            title: 'Delete',
+            type: 3,
+            handler: function () {
+              notie.alert(3, 'Delete item!', 3)
+            }
+          }
+        ])
+      }
+
+      function log(){
+        notie.input({
+            type: 'text',
+            placeholder: 'nickname',
+            allowed: ['an', 'sp']
+          }, 'Please enter your login:', 'Submit', 'Cancel', function (valueEntered) {
+            localStorage.setItem('login',valueEntered);
+            notie.input({
+	            type: 'password',
+	            placeholder: 'password',
+	            allowed: ['an', 'sp']
+	          }, 'Please enter your password:', 'Submit', 'Cancel', function (valueEntered) {
+	            localStorage.setItem('password',valueEntered);
+		      	var login = localStorage.getItem('login');
+		      	var password = localStorage.getItem('password');
+		      	var checklogin = false;
+		      	for(var i=0;i<10;i++){
+				var ch=i;
+				$.get('http://pokeapi.co/api/v2/pokemon/' + ch + '/',
+		      		{
+		      			login:login,
+		      			password:password
+		      		},
+		      		function(data){
+		      			console.log(data);
+		      			if(data=='true'){
+		      				checklogin=true;
+		      				console.log(checklogin);
+							alert( data );
+		      			}
+		      			else{
+		      				console.log(checklogin);
+		      			}
+		      		});
+				
+				}
+	          }, function (valueEntered) {
+	            notie.alert(3, 'You cancelled with this value: ' + valueEntered, 2)
+	        })
+          }, function (valueEntered) {
+            notie.alert(3, 'You cancelled with this value: ' + valueEntered, 2)
+        })
+      }
+
+      function signup(){
+      	var login = localStorage.getItem('login');
+      	var password = localStorage.getItem('password');
+      	var mail = localStorage.getItem('mail');
+      	var confirm_password = localStorage.getItem('confirm_password');
+      	var date = localStorage.getItem('date');
+      	var checklogin = false;
+      	if (login != null && password==confirm_password && password!=null && mail !=null)
+      	{
+      		$.post('signup.php',
+      		{
+      			login:login,
+      			password:password,
+      			mail:mail,
+      			date:date
+      		},
+      		function(data){
+      			if(data=='true'){
+      				checklogin=true;
+      				console.log(checklogin);
+      				success();
+      			}
+      			else{
+      				warning();
+      				localStorage.removeItem('login');
+      				localStorage.removeItem('password');
+      				localStorage.removeItem('confirm_password');
+      				localStorage.removeItem('mail');
+      				localStorage.removeItem('date');
+      				//window.location.reload();
+      				console.log(checklogin);
+      			}
+      		});
+      	}
+      	else {
+      		warning();
+      	}	
+      }
+      function date() {
+        notie.date({
+          initial: new Date(1990, 3, 20),
+          yesCallback: function (date) {
+          	localStorage.setItem('date',date.toISOString());
+          	signup();
+            //notie.alert(1, 'You selected: ' + date.toISOString(), 5)
+          },
+          noCallback: function (date) {
+            notie.alert(3, 'You cancelled: ' + date.toISOString(), 5)
+          }
+        })
+      }
+    </script>
+  </body>
+</html>
